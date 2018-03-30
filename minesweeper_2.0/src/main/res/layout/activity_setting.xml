@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/setting_activity_relationlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+              android:background="#ffffff"
+    tools:context="com.practice.mimesweeper.SettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/setting_activity_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="难度"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/divide_line1"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#AAAAAA" />
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/easy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radiobuttonselect"
+                android:textColor="#000000"
+                android:text="初级(5×8)(6个地雷)" />
+
+            <RadioButton
+                android:id="@+id/normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radiobuttonselect"
+                android:textColor="#000000"
+                android:text="中级(10×15)(25个地雷)"
+                />
+
+            <RadioButton
+                android:id="@+id/hard"
+                android:button="@drawable/radiobuttonselect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="高级(20×30)(120个地雷)" />
+
+            <RadioButton
+                android:id="@+id/custom_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radiobuttonselect"
+                android:textColor="#000000"
+                android:text="自定义" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divide_line2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#AAAAAA" />
+
+    <TextView
+        android:id="@+id/custom_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="#000000"
+        android:text="自定义"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/custom_edit_line"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:hint="1～100"
+            android:maxLength="3"
+            android:editable="false"
+            android:textColorHint="#aaaaaa"
+            android:inputType="number"/>
+
+        <TextView
+            android:id="@+id/custom_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="列"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/custom_edit_row"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLength="3"
+            android:editable="false"
+            android:textColor="#000000"
+            android:hint="1～100"
+            android:textColorHint="#aaaaaa"
+            android:inputType="number"/>
+
+        <TextView
+            android:id="@+id/custom_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="行"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/custom_edit_mime"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:editable="false"
+            android:maxLength="4"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:inputType="number"
+            />
+
+        <TextView
+            android:id="@+id/custom_mime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_weight="1"
+            android:text="个雷"
+            android:textColor="#000" />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/soundeffect"
+            android:text="音效"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:button="@drawable/radiobuttonselect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <CheckBox
+            android:id="@+id/soundbackground"
+            android:text="音乐"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:button="@drawable/radiobuttonselect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/soundeffect"/>
+
+        <SeekBar
+            android:id="@+id/effectseekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="3dp"
+            android:layout_centerHorizontal="true"
+            android:progressDrawable="@drawable/seekbar_bg"
+            android:layout_toRightOf="@id/soundeffect"
+            android:layout_above="@+id/soundbackground"
+            android:thumb="@drawable/point"
+            android:layout_alignParentTop="true"/>
+
+        <SeekBar
+            android:id="@+id/backgroundseekbar"
+            android:layout_width="match_parent"
+            android:thumb="@drawable/point"
+            android:maxHeight="3dp"
+            android:progressDrawable="@drawable/seekbar_bg"
+            android:layout_toRightOf="@id/soundbackground"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/soundeffect"
+            android:layout_alignBottom="@+id/soundbackground"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/autoUpdate"
+            android:text="自动更新"
+            android:checked="true"
+            android:textColor="#000"
+            android:button="@drawable/radiobuttonselect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+        <Button
+            android:text="检查更新"
+            android:onClick="checkUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/commit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="确定" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="取消" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MyApplication.iml" filepath="$PROJECT_DIR$/MyApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/downLoadTest/downLoadTest.iml" filepath="$PROJECT_DIR$/downLoadTest/downLoadTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mimesweeper/mimesweeper.iml" filepath="$PROJECT_DIR$/mimesweeper/mimesweeper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/minesweeper_2.0/minesweeper_2.0.iml" filepath="$PROJECT_DIR$/minesweeper_2.0/minesweeper_2.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/promissiontest/promissiontest.iml" filepath="$PROJECT_DIR$/promissiontest/promissiontest.iml" />
+    </modules>
+  </component>
+</project>
